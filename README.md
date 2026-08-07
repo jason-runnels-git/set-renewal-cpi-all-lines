@@ -34,6 +34,14 @@ deploy it into an existing one.
 Without the Price Revision element in the pricing procedure and the Index Rates /
 Price Revision Policy data, the applied policy has nothing to resolve against.
 
+### Prerequisite: Index Rates Table
+
+![Prereq 1 - Index Rates](Prereq_1.jpg)
+
+### Prerequisite: Price Revision Policies
+
+![Prereq 2 - Price Revision Policies](Prereq_2.jpg)
+
 ## Deploy
 
 The flow file sits at the repo root with no project. Wrap it, then deploy:
@@ -66,6 +74,12 @@ sf project deploy start --source-dir force-app --target-org <alias>
 2. **Surface the flow.** It's a **Screen Flow**; add it as an **Action/Button** on
    the Quote (or wherever reps apply the renewal uplift) so it can be launched
    against a quote's lines.
+
+## Flow
+
+![Flow Overview](RenewalUpliftCPI_1.jpg)
+
+![Flow Detail](RenewalUpliftCPI_2.jpg)
 
 ## Verify
 
